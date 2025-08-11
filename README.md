@@ -35,11 +35,16 @@
 
    > Are you asking if I can hum a tune? Of course I can! [humming start] la la la la la [humming end] See?
 
+## 安装环境
+
+```shell
+conda create -n higgs-audio python=3.10
+conda activate higgs-audio
+pip install -r requirements.txt
+```
+
 ## 测试代码
 
-> conda create -n higgs-audio
-> conda activate higgs-audio
-> pip install -r requirements.txt
 > 使用具体参考 main.ipynb
 
 ```python
@@ -50,7 +55,7 @@ model_client = HiggsAudioModelClient(
     model_path="models/higgs-audio-v2-generation-3B-base",
     audio_tokenizer="models/higgs-audio-v2-tokenizer",
     semantic_model_or_path="models/hubert_base",
-    device="cuda:4",
+    device="cuda:0",
     use_static_kv_cache=True,
 )
 ```
