@@ -2,8 +2,8 @@
 
 ## 参考音频文件
 
-- 克隆的音频及对应的文本 xxx.wav + xxx.txt 放到 voice_prompts
-- 可以设置音频 xxx 的 profile, 放到 voice_profile.json 中
+- 克隆的音频及对应的文本 xxx.wav + xxx.txt 放到 references/voice_prompts
+- 可以设置音频 xxx 的 profile, 放到 references/voice_profile.json 中
 
 ## transcript/场景文本描述
 
